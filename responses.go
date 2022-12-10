@@ -20,7 +20,7 @@ func NewCmdRespEmbed(title, content string) *CmdResp {
 	return resp
 }
 func CmdRespFromMsg(msg *services.Message) *CmdResp {
-	return &CmdResp{msg, false}
+	return &CmdResp{msg, true}
 }
 func (resp *CmdResp) String() string {
 	jsonData, err := json.Marshal(resp, true)

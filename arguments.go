@@ -8,6 +8,9 @@ import (
 )
 
 var (
+	ArgTypeChannel = &services.Channel{}
+	ArgTypeRole = &services.Role{}
+	ArgTypeServer = &services.Server{}
 	ArgTypeUser = &services.User{}
 )
 
